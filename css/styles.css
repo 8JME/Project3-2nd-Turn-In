@@ -70,7 +70,7 @@
 /* Ensure body content starts below navbar */
 .body-container {
   padding: 0 15px;
-  margin-top: 60%; /* Always pushes content below the navbar */
+  margin-top: 75%; /* Always pushes content below the navbar */
 }
 
 /* Tablet & Desktop View (768px and larger) */
@@ -359,6 +359,21 @@ dl dt p {
   }
 }
 
-#slide-show-container {
 
+/* Tablet & Desktop View (768px and larger) */
+@media screen and (max-width: 768px) {
+  .video-container .iframe-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  
+  .video-container .iframe-wrapper iframe {
+    position: absolute;
+    top: 1.125em;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+  }
 }
